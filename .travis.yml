@@ -1,0 +1,12 @@
+language: java
+ notifications:
+   email:
+     - syed.muzakkir@egovernments.org
+     - dinesh.s@egovernments.org
+
+matrix:
+   fast_finish: true
+   include:
+     - jdk: oraclejdk8
+     
+script: mvn clean verify
